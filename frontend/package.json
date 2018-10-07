@@ -1,0 +1,36 @@
+{
+  "name": "glovo-frontend",
+  "version": "0.0.1",
+  "description": "Frontend to display products and prices",
+  "main": "app.js",
+  "scripts": {
+    "start": "PORT=3000 node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navinbisht1992/glovo-fullstack-engineer-challenge"
+  },
+  "keywords": [
+    "promise",
+    "async",
+    "await",
+    "const",
+    "let",
+    "require",
+    "module",
+    "exports"
+  ],
+  "author": "navin",
+  "bugs": {
+    "url": "https://github.com/navinbisht1992/glovo-fullstack-engineer-challenge/issues"
+  },
+  "homepage": "https://github.com/navinbisht1992/glovo-fullstack-engineer-challenge#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
+    "get-port": "^4.0.0",
+    "https": "^1.0.0",
+    "path": "^0.12.7"
+  }
+}

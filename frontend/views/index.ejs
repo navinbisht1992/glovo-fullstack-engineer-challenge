@@ -1,0 +1,63 @@
+    <!DOCTYPE html5>
+    <html >
+        <head>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" type="text/css" href="/css/bootstrap/css/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="/css/fontAwesome/css/font-awesome.min.css" />
+            <link rel="stylesheet" type="text/css" href="/css/app.css" />
+            <link rel="icon" href="logo.jpg" />
+            <title>Product</title>
+        </head>
+        <body>
+            <header class="header row header1">
+                <div class="col-md-3"><img class="height30" src="logo_green.svg"></div>
+                <div class="col-md-6 center">Welcome</div>
+            </header>
+            <div class="row">
+                <div class="col-md-12 marginTop20">
+                    <div class="col-md-8 offset-md-2 center paddingTop25">
+                        <label class="theme font22">Check current CRYPTO currency price.</label>
+                    </div>
+                    <div class="col-md-4 offset-md-4 center paddingTop25">
+                        <div class="form-group">
+                            <label for="product" class="theme font35"> Select Currency </label>
+                            <select id="product" class="customSelect center" onChange="getPrices()">
+                                <option value=""> Select </option>
+                            </select>
+                            <span onClick="getProducts()" class="refresh font22"> Refresh <i id="refresh" class="fa fa-refresh" aria-hidden="true"></i></span>
+                            <span id="productError1" class="error hide"> Not able to fetch currency. </span>
+                            <span id="productError2" class="error hide"> Select any currency. </span>
+                            <span id="productError3" class="error hide"> Currency not available. </span>
+                            <span id="productError4" class="error hide"> Not able to get currency price. Contact Administration. </span>
+                        </div>
+                    </div>
+                    <div id="loading" class="col-md-12 paddingTop40 center hide">
+                        <span class="theme"><i aria-hidden="true" class="fa fa-spinner fa-spin fa-5x"></i></span>
+                    </div>
+                    <div id="showTable" class="row paddingTop40 center hide">
+                        <div class="col-md-4">
+                            <label id="exchange1" class="font22 theme"></label>
+                            <table class="table marginTop20">
+                                <tbody id="price1" class="font14"></tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-4">
+                            <label id="exchange2" class="font22 theme"></label>
+                            <table class="table marginTop20">
+                                <tbody id="price2" class="font14"></tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-4">
+                            <label id="exchange3" class="font22 theme"></label>
+                            <table class="table marginTop20">
+                                <tbody id="price3" class="font14"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript" src="/js/jquery.min.js"></script>
+            <!-- `login.js` is only used in `login.ejs` -->
+            <script type="text/javascript" src="/js/app.js"></script>
+        </body>
+    </html>
